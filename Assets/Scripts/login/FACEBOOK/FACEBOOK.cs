@@ -1,7 +1,6 @@
 ﻿using PlayFab;
 using PlayFab.ClientModels;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using System;
@@ -11,10 +10,10 @@ using Facebook.Unity;
 #endif
 #endregion
 
-public class ViaFB : MonoBehaviour
+public class FACEBOOK : MonoBehaviour
 {
     #region SINGLETON
-    public static ViaFB LFB;
+    public static FACEBOOK LFB;
 
     private void OnEnable()
     {
@@ -30,18 +29,13 @@ public class ViaFB : MonoBehaviour
             }
         }
 
-        DontDestroyOnLoad(this.gameObject);
+
     }
     #endregion
 
     #region VARIABLES
-    public GameObject LoginPanel;
-    public GameObject welcomePanel;
-    public GameObject loadingPanel;
+    public UIcontroller UI;
     public Text usernameTEXT;
-    public GameObject scriptFB;
-    public StadisticsData sData;
-    //Lo de abajo para instanciar la clase en donde se encuentran los datos que setearas u obtendras de la base de datos(playfab)
 
     #endregion
 
@@ -49,29 +43,20 @@ public class ViaFB : MonoBehaviour
     void Awake()
     {
 
-        DontDestroyOnLoad(scriptFB);
+      
 #if FACEBOOK
+
         if (!FB.IsInitialized)
         {
 
             FB.Init(OnFacebookInitialized, OnHideUnity);
-            Debug.Log("Iniciando el SDK de Facebook...");
    
         }
         else
         {
-
             FB.ActivateApp();
-         
         }
 #endif
-    }
-    #endregion
-
-    #region START
-    void Start()
-    {
-        sData = GetComponent<StadisticsData>();
     }
     #endregion
 
@@ -92,20 +77,12 @@ public class ViaFB : MonoBehaviour
 
         if (FB.IsLoggedIn)
         {
-            LoginPanel.SetActive(false);
-            welcomePanel.SetActive(true);
+            UI.success();
             usernameTEXT.text = PlayerPrefs.GetString("USERNAME");
-
-
-
-
-
-
         }
         else
         {
-            LoginPanel.SetActive(true);
-            welcomePanel.SetActive(false);
+            UI.error();
         }
     }
 
@@ -138,68 +115,47 @@ public class ViaFB : MonoBehaviour
 
             var LoginFacebookRequest = new LoginWithFacebookRequest { CreateAccount = true, AccessToken = AccessToken.CurrentAccessToken.TokenString };
             PlayFabClientAPI.LoginWithFacebook(LoginFacebookRequest, OnPlayFabLoginWithFacebookSuccess, OnPlayFabLoginWithFacebookFailure);
-            LoginPanel.SetActive(false);
-            welcomePanel.SetActive(true);
             BienvenidaAlJugadorEnFacebook(FB.IsLoggedIn);
+            UI.success();
 
         }
         else
         {
-
-            Debug.LogError("El inicio de sesion con Facebook fracaso por el siguiente error: " + result.Error + "\n" + result.RawResult);
-            LoginPanel.SetActive(true);
-            welcomePanel.SetActive(false);
-
+            UI.error();
         }
     }
 
     private void OnPlayFabLoginWithFacebookSuccess(PlayFab.ClientModels.LoginResult result)
     {
-        Debug.Log("Facebook PlayFab inicio sesion correctamente. Ticket de sesion: " + result.SessionTicket);
-        sData.GetUserData();
+      //hola     
     }
 
     private void OnPlayFabLoginWithFacebookFailure(PlayFabError error)
     {
-
-        Debug.LogError("Facebook PlayFab no pudo iniciar sesion debido al siguiente error");
         Debug.LogError(error.GenerateErrorReport());
-
     }
 
     void BienvenidaAlJugadorEnFacebook(bool IsLoggedIn)
     {
 
-        FB.API("/me?fields=first_name", HttpMethod.GET, obtenerUsernameFacebook);
+        FB.API("/me?fields=first_name", HttpMethod.GET, GetFirstName);
 
     }
 
-    private void obtenerUsernameFacebook(IResult result)
+    private void GetFirstName(IResult result)
     {
 
         if (result.Error == null)
         {
 
-            Debug.Log("Bienvenido" + result.ResultDictionary["first_name"]);
-
             PlayerPrefs.SetString("USERNAME", Convert.ToString(result.ResultDictionary["first_name"]));
             usernameTEXT.text = PlayerPrefs.GetString("USERNAME");
-
-            Debug.Log("KEY ALMACENADA:");
-            Debug.Log(PlayerPrefs.GetString("USERNAME"));
-
-
-
-
 
 
         }
         else
         {
-
-            Debug.Log("Acaba de ocurrir un error:");
             Debug.Log(result.Error);
-
         }
     }
     #endregion
@@ -207,20 +163,13 @@ public class ViaFB : MonoBehaviour
     #region cerrar sesion // ir al cliente
     public void GoToClient()
     {
-
-        welcomePanel.SetActive(false);
-        loadingPanel.SetActive(true);
-        SceneManager.LoadScene("cliente");
-        sData.GetUserData();
-
+        UI.GO();
     }
 
     public void CloseSession()
     {
         PlayerPrefs.DeleteKey("USERNAME");
-        LoginPanel.SetActive(true);
-        welcomePanel.SetActive(false);
-        FB.LogOut();
+        UI.Back();
 
     }
     #endregion
