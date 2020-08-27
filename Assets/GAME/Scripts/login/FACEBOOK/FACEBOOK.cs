@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using System;
+using System.Runtime.InteropServices.ComTypes;
 #region using facebook with unity
 #if FACEBOOK
 using Facebook.Unity;
@@ -12,6 +13,8 @@ using Facebook.Unity;
 
 public class FACEBOOK : MonoBehaviour
 {
+    public Main mn;
+
     #region SINGLETON
     public static FACEBOOK LFB;
 
@@ -36,6 +39,7 @@ public class FACEBOOK : MonoBehaviour
     #region VARIABLES
     public UIcontroller UI;
     public Text usernameTEXT;
+    public Text usernameClient;
 
     #endregion
 
@@ -68,6 +72,7 @@ public class FACEBOOK : MonoBehaviour
         {
             FB.ActivateApp();
             usernameTEXT.text = PlayerPrefs.GetString("USERNAME");
+            usernameClient.text = PlayerPrefs.GetString("USERNAME");
         }
         else
         {
@@ -79,6 +84,8 @@ public class FACEBOOK : MonoBehaviour
         {
             UI.success();
             usernameTEXT.text = PlayerPrefs.GetString("USERNAME");
+            usernameClient.text = PlayerPrefs.GetString("USERNAME");
+            mn.ObtenerStats();
         }
         else
         {
@@ -116,6 +123,7 @@ public class FACEBOOK : MonoBehaviour
             var LoginFacebookRequest = new LoginWithFacebookRequest { CreateAccount = true, AccessToken = AccessToken.CurrentAccessToken.TokenString };
             PlayFabClientAPI.LoginWithFacebook(LoginFacebookRequest, OnPlayFabLoginWithFacebookSuccess, OnPlayFabLoginWithFacebookFailure);
             BienvenidaAlJugadorEnFacebook(FB.IsLoggedIn);
+           // mn.ObtenerDatos();
             UI.success();
 
         }
@@ -127,7 +135,7 @@ public class FACEBOOK : MonoBehaviour
 
     private void OnPlayFabLoginWithFacebookSuccess(PlayFab.ClientModels.LoginResult result)
     {
-      //hola     
+        mn.ObtenerStats();
     }
 
     private void OnPlayFabLoginWithFacebookFailure(PlayFabError error)
@@ -150,6 +158,7 @@ public class FACEBOOK : MonoBehaviour
 
             PlayerPrefs.SetString("USERNAME", Convert.ToString(result.ResultDictionary["first_name"]));
             usernameTEXT.text = PlayerPrefs.GetString("USERNAME");
+            usernameClient.text = PlayerPrefs.GetString("USERNAME");
 
 
         }
@@ -168,8 +177,10 @@ public class FACEBOOK : MonoBehaviour
 
     public void CloseSession()
     {
-        PlayerPrefs.DeleteKey("USERNAME");
+        
         UI.Back();
+        PlayerPrefs.DeleteKey("USERNAME");
+        Destroy(mn);
 
     }
     #endregion

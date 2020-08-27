@@ -8,9 +8,9 @@ using Facebook.Unity;
 
 public class UIhome : MonoBehaviour
 {
+
     public void Back()
     {
-        FB.LogOut();
-        SceneManager.LoadScene("login");
+        
     }
 }

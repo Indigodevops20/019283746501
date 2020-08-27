@@ -13,6 +13,9 @@ public class UIcontroller : MonoBehaviour
     public GameObject welcomePanel;
     public GameObject loadingPanel;
 
+    public GameObject background;
+    public GameObject UI;
+    public GameObject CAMPOS;
     public void success()
     {
         LoginPanel.SetActive(false);
@@ -28,15 +31,22 @@ public class UIcontroller : MonoBehaviour
     public void GO()
     {
         welcomePanel.SetActive(false);
-        loadingPanel.SetActive(true);
-        SceneManager.LoadScene("cliente");
+        //LOADING
+        background.SetActive(true);
+        UI.SetActive(true);
+        CAMPOS.SetActive(true);
+        
     }
 
     public void Back()
     {
-        LoginPanel.SetActive(true);
-        welcomePanel.SetActive(false);
         FB.LogOut();
+        //LOADING
+        welcomePanel.SetActive(false);
+        background.SetActive(false);
+        UI.SetActive(false);
+        CAMPOS.SetActive(false);
+        LoginPanel.SetActive(true);
     }
 }
 
