@@ -14,6 +14,7 @@ using Facebook.Unity;
 public class FACEBOOK : MonoBehaviour
 {
     public Main mn;
+    public string standar = "WILDONES";
 
     #region SINGLETON
     public static FACEBOOK LFB;
@@ -73,6 +74,8 @@ public class FACEBOOK : MonoBehaviour
             FB.ActivateApp();
             usernameTEXT.text = PlayerPrefs.GetString("USERNAME");
             usernameClient.text = PlayerPrefs.GetString("USERNAME");
+
+
         }
         else
         {
@@ -110,7 +113,7 @@ public class FACEBOOK : MonoBehaviour
 
         var permissions = new List<string>() { "public_profile" };
         FB.LogInWithReadPermissions(permissions, OnFacebookLoggedIn);
-
+        
 
     }
 
@@ -136,9 +139,18 @@ public class FACEBOOK : MonoBehaviour
     private void OnPlayFabLoginWithFacebookSuccess(PlayFab.ClientModels.LoginResult result)
     {
         mn.ObtenerStats();
+        standar = PlayerPrefs.GetString("USERNAME");
+        Debug.Log(standar);
+        PlayFabClientAPI.UpdateUserTitleDisplayName(new UpdateUserTitleDisplayNameRequest { DisplayName = standar }, OnDisplayName, OnPlayFabLoginWithFacebookFailure);
+
     }
 
-    private void OnPlayFabLoginWithFacebookFailure(PlayFabError error)
+   public void OnDisplayName(UpdateUserTitleDisplayNameResult result)
+    {
+        Debug.Log(result.DisplayName + "is your name");
+    }
+
+   public void OnPlayFabLoginWithFacebookFailure(PlayFabError error)
     {
         Debug.LogError(error.GenerateErrorReport());
     }
@@ -150,7 +162,7 @@ public class FACEBOOK : MonoBehaviour
 
     }
 
-    private void GetFirstName(IResult result)
+    public void GetFirstName(IResult result)
     {
 
         if (result.Error == null)
@@ -167,6 +179,8 @@ public class FACEBOOK : MonoBehaviour
             Debug.Log(result.Error);
         }
     }
+
+    
     #endregion
 
     #region cerrar sesion // ir al cliente

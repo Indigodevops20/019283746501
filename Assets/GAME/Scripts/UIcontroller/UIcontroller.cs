@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 #region using facebook with unity
 #if FACEBOOK
 using Facebook.Unity;
@@ -9,6 +8,7 @@ using Facebook.Unity;
 
 public class UIcontroller : MonoBehaviour
 {
+    public FACEBOOK fb;
     public GameObject LoginPanel;
     public GameObject welcomePanel;
     public GameObject loadingPanel;
@@ -35,7 +35,7 @@ public class UIcontroller : MonoBehaviour
         background.SetActive(true);
         UI.SetActive(true);
         CAMPOS.SetActive(true);
-        
+
     }
 
     public void Back()

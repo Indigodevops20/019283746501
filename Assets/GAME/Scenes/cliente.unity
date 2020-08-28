@@ -960,6 +960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33dac6f884894274685db009e43c5bdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fb: {fileID: 926881611}
   LoginPanel: {fileID: 195287624}
   welcomePanel: {fileID: 951259466}
   loadingPanel: {fileID: 1133289063}
@@ -3989,6 +3990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mn: {fileID: 2118647889}
+  standar: WILDONES
   UI: {fileID: 115911355}
   usernameTEXT: {fileID: 1548017928}
   usernameClient: {fileID: 1352715110}
