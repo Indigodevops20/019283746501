@@ -1309,7 +1309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &195287625
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3494,8 +3494,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2118647889}
-        m_MethodName: SubirStats
+      - m_Target: {fileID: 2118647892}
+        m_MethodName: StartCloudUpdatePlayerStats
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8771,6 +8771,7 @@ GameObject:
   - component: {fileID: 2118647891}
   - component: {fileID: 2118647890}
   - component: {fileID: 2118647889}
+  - component: {fileID: 2118647892}
   - component: {fileID: 2118647888}
   m_Layer: 0
   m_Name: UseDATA
@@ -8834,6 +8835,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2118647892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118647887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab328e821d4147a448b26766cf010190, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  var: {fileID: 2118647888}
 --- !u!1 &2142833166
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,6 +12,6 @@ public class Main : MonoBehaviour
 
     public void SubirStats()
     {
-        stats.SetStats();
+        //stats.SetStats();
     }
 }

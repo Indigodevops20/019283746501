@@ -26,7 +26,7 @@ public class Statistics : MonoBehaviour
     public int PlayerKills;
     public int PlayerWins;
 
-    public void SetStats()
+   /* public void SetStats()
     {
         PlayFabClientAPI.UpdatePlayerStatistics(new UpdatePlayerStatisticsRequest
         {
@@ -40,7 +40,7 @@ public class Statistics : MonoBehaviour
         result => { Debug.Log("User statistics updated"); },
         error => { Debug.LogError(error.GenerateErrorReport()); });
     }
-
+    */
     public void GetStats()
     {
         PlayFabClientAPI.GetPlayerStatistics(
