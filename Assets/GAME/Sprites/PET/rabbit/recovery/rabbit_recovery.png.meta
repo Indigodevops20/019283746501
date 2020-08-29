@@ -1,0 +1,848 @@
+fileFormatVersion: 2
+guid: abf006010267a0f439375600f647674d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4538568279304363224
+    second: rabbit_recovery_0
+  - first:
+      213: -6071190628261612346
+    second: rabbit_recovery_1
+  - first:
+      213: -715862163447204778
+    second: rabbit_recovery_2
+  - first:
+      213: -8551237494870368912
+    second: rabbit_recovery_3
+  - first:
+      213: 1564902147062564285
+    second: rabbit_recovery_4
+  - first:
+      213: -5037793811622911974
+    second: rabbit_recovery_5
+  - first:
+      213: 5553987787768738709
+    second: rabbit_recovery_6
+  - first:
+      213: 3167174720809507976
+    second: rabbit_recovery_7
+  - first:
+      213: 189952504575392891
+    second: rabbit_recovery_8
+  - first:
+      213: -3803187176325521433
+    second: rabbit_recovery_9
+  - first:
+      213: 1489068320515089362
+    second: rabbit_recovery_10
+  - first:
+      213: 7514216832706158600
+    second: rabbit_recovery_11
+  - first:
+      213: 8554080982552558145
+    second: rabbit_recovery_12
+  - first:
+      213: -3603799232447306633
+    second: rabbit_recovery_13
+  - first:
+      213: -7393122476009197587
+    second: rabbit_recovery_14
+  - first:
+      213: 757123327720527502
+    second: rabbit_recovery_15
+  - first:
+      213: -3887977025003281933
+    second: rabbit_recovery_16
+  - first:
+      213: 1773619528628246939
+    second: rabbit_recovery_17
+  - first:
+      213: -6999172280962020533
+    second: rabbit_recovery_18
+  - first:
+      213: -7374190930429234239
+    second: rabbit_recovery_19
+  - first:
+      213: -5192751866344602575
+    second: rabbit_recovery_20
+  - first:
+      213: -6739977094150065588
+    second: rabbit_recovery_21
+  - first:
+      213: 8136400015905877336
+    second: rabbit_recovery_22
+  - first:
+      213: -177311129616579111
+    second: rabbit_recovery_23
+  - first:
+      213: -5118880564227852056
+    second: rabbit_recovery_24
+  - first:
+      213: -3660884919532241254
+    second: rabbit_recovery_25
+  - first:
+      213: 8705579178777579625
+    second: rabbit_recovery_26
+  - first:
+      213: -6309945822279076783
+    second: rabbit_recovery_27
+  - first:
+      213: 8873829605033713111
+    second: rabbit_recovery_28
+  - first:
+      213: -3005649480604052112
+    second: rabbit_recovery_29
+  - first:
+      213: 7274013943071653282
+    second: rabbit_recovery_30
+  - first:
+      213: 6426934344313418549
+    second: rabbit_recovery_31
+  - first:
+      213: -2859832685520056257
+    second: rabbit_recovery_32
+  - first:
+      213: -3042233969432689252
+    second: rabbit_recovery_33
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rabbit_recovery_0
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1376
+        width: 142
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82325334234c301c0800000000000000
+      internalID: -4538568279304363224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_1
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1377
+        width: 144
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c439c64a4ccebba0800000000000000
+      internalID: -6071190628261612346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_2
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1379
+        width: 159
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6543697b72fb016f0800000000000000
+      internalID: -715862163447204778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_3
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 1386
+        width: 154
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d10480ec6e35980800000000000000
+      internalID: -8551237494870368912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_5
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 1415
+        width: 251
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a102e8e3839261ab0800000000000000
+      internalID: -5037793811622911974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_6
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 1387
+        width: 129
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59330d8777ab31d40800000000000000
+      internalID: 5553987787768738709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_7
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1022
+        width: 147
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c927fc0a014fb20800000000000000
+      internalID: 3167174720809507976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_8
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 1039
+        width: 160
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c7967ebc8d2a200800000000000000
+      internalID: 189952504575392891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_9
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1043
+        width: 160
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7efdbccc96d583bc0800000000000000
+      internalID: -3803187176325521433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_10
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1052
+        width: 149
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d3e6928fbb3aa410800000000000000
+      internalID: 1489068320515089362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_11
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 1053
+        width: 196
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80026b6b56cd74860800000000000000
+      internalID: 7514216832706158600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_12
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 1050
+        width: 123
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14a38f8055336b670800000000000000
+      internalID: 8554080982552558145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_13
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 706
+        width: 161
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774272c11bbbcfdc0800000000000000
+      internalID: -3603799232447306633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_14
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 708
+        width: 168
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: defe38c474a566990800000000000000
+      internalID: -7393122476009197587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_15
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 709
+        width: 158
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8691f7b7a7d18a00800000000000000
+      internalID: 757123327720527502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_16
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 711
+        width: 143
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f1acc1ce712b0ac0800000000000000
+      internalID: -3887977025003281933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_17
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 710
+        width: 140
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99159270992d9810800000000000000
+      internalID: 1773619528628246939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_18
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 686
+        width: 140
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b8f77c4e1fdde90800000000000000
+      internalID: -6999172280962020533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_19
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 373
+        width: 138
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c3bbdd3b6c99a990800000000000000
+      internalID: -7374190930429234239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_21
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 427
+        width: 326
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c427ae4fa8ac672a0800000000000000
+      internalID: -6739977094150065588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_23
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 429
+        width: 326
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d50b7097701a8df0800000000000000
+      internalID: -177311129616579111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_25
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 423
+        width: 326
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e32b7df8ce13dc0800000000000000
+      internalID: -3660884919532241254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_26
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 349
+        width: 136
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9601313932e60d870800000000000000
+      internalID: 8705579178777579625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_27
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 348
+        width: 140
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1547817c4b19e68a0800000000000000
+      internalID: -6309945822279076783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_28
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 10
+        width: 140
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd116d920d262b70800000000000000
+      internalID: 8873829605033713111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_29
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 10
+        width: 139
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0751245d8b9c946d0800000000000000
+      internalID: -3005649480604052112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_30
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 10
+        width: 140
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad3600542d72f460800000000000000
+      internalID: 7274013943071653282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_31
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 10
+        width: 139
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5333f8b1cbe013950800000000000000
+      internalID: 6426934344313418549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_32
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 35
+        width: 133
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3096861355df48d0800000000000000
+      internalID: -2859832685520056257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit_recovery_33
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 36
+        width: 123
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c958650c250d7c5d0800000000000000
+      internalID: -3042233969432689252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
