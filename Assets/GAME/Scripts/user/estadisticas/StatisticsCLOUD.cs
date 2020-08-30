@@ -12,7 +12,8 @@ public class StatisticsCLOUD : MonoBehaviour
         PlayFabClientAPI.ExecuteCloudScript(new ExecuteCloudScriptRequest()
         {
             FunctionName = "UpdatePlayerStatistics", // Arbitrary function name (must exist in your uploaded cloud.js file)
-            FunctionParameter = new { 
+            FunctionParameter = new
+            {
                 Level = var.PlayerLevel,
                 Kills = var.PlayerKills,
                 Wins = var.PlayerWins

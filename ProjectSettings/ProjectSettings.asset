@@ -246,7 +246,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: E:/KeyStore/HashKey/indigodevs.keystore
+  AndroidKeystoreName: '{dedicated}: Downloads/indigodevs.keystore'
   AndroidKeyaliasName: indigodevs
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
