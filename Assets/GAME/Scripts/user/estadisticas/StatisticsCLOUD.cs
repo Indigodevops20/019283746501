@@ -1,6 +1,5 @@
 ﻿using PlayFab;
 using PlayFab.ClientModels;
-using PlayFab.PfEditor.Json;
 using UnityEngine;
 
 public class StatisticsCLOUD : MonoBehaviour
@@ -25,7 +24,6 @@ public class StatisticsCLOUD : MonoBehaviour
     private static void OnCloudUPDATEstats(ExecuteCloudScriptResult result)
     {
         // CloudScript returns arbitrary results, so you have to evaluate them one step and one parameter at a time
-        Debug.Log(JsonWrapper.SerializeObject(result.FunctionResult));
         PlayFab.Json.JsonObject jsonResult = (PlayFab.Json.JsonObject)result.FunctionResult;
         object messageValue;
         jsonResult.TryGetValue("messageValue", out messageValue); // note how "messageValue" directly corresponds to the JSON values set in CloudScript
