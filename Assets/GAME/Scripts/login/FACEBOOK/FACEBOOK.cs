@@ -85,7 +85,7 @@ public class FACEBOOK : MonoBehaviour
 
         if (FB.IsLoggedIn)
         {
-            UI.success();
+            UI.Loading();
             usernameTEXT.text = PlayerPrefs.GetString("USERNAME");
             usernameClient.text = PlayerPrefs.GetString("USERNAME");
             mn.ObtenerStats();
@@ -126,8 +126,10 @@ public class FACEBOOK : MonoBehaviour
             var LoginFacebookRequest = new LoginWithFacebookRequest { CreateAccount = true, AccessToken = AccessToken.CurrentAccessToken.TokenString };
             PlayFabClientAPI.LoginWithFacebook(LoginFacebookRequest, OnPlayFabLoginWithFacebookSuccess, OnPlayFabLoginWithFacebookFailure);
             BienvenidaAlJugadorEnFacebook(FB.IsLoggedIn);
+            //Se activara la pantalla de carga
+            UI.Loading();
            // mn.ObtenerDatos();
-            UI.success();
+            // UI.success();
 
         }
         else
@@ -147,7 +149,7 @@ public class FACEBOOK : MonoBehaviour
 
    public void OnDisplayName(UpdateUserTitleDisplayNameResult result)
     {
-        Debug.Log(result.DisplayName + "is your name");
+        Debug.Log(result.DisplayName + " is your name");
     }
 
    public void OnPlayFabLoginWithFacebookFailure(PlayFabError error)

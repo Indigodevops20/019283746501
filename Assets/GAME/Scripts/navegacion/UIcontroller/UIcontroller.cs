@@ -19,17 +19,20 @@ public class UIcontroller : MonoBehaviour
     public void success()
     {
         LoginPanel.SetActive(false);
+        loadingPanel.SetActive(false);
         welcomePanel.SetActive(true);
     }
 
     public void error()
     {
-        LoginPanel.SetActive(true);
+        loadingPanel.SetActive(false);
         welcomePanel.SetActive(false);
+        LoginPanel.SetActive(true);
     }
 
     public void GO()
     {
+        loadingPanel.SetActive(false);
         welcomePanel.SetActive(false);
         //LOADING
         background.SetActive(true);
@@ -43,10 +46,17 @@ public class UIcontroller : MonoBehaviour
         FB.LogOut();
         //LOADING
         welcomePanel.SetActive(false);
+        loadingPanel.SetActive(false);
         background.SetActive(false);
         UI.SetActive(false);
         CAMPOS.SetActive(false);
         LoginPanel.SetActive(true);
+    }
+
+    public void Loading()
+    {
+        LoginPanel.SetActive(false);
+        loadingPanel.SetActive(true);
     }
 }
 

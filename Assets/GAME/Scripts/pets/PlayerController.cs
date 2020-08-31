@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     //Salto
     public float jumpPower;
     //Joystick
-    public joystick_move jm;
+    public Joystick_move jm;
 
     // Start is called before the first frame update
     void Start()
