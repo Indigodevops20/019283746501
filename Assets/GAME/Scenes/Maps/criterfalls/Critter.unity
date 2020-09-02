@@ -180,7 +180,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 1024
-  jumpPower: 3
+  jumpPower: 5
   jm: {fileID: 1320879151}
 --- !u!95 &429680579
 Animator:

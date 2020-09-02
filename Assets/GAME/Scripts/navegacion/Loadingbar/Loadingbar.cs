@@ -40,16 +40,14 @@ public class Loadingbar : MonoBehaviour
                     texto.text = $"{Convert.ToInt32(100 * Barra.fillAmount).ToString()}% Verifying the account...";
                     if (Barra.fillAmount >= 0.6f)
                     {
-                        texto.text = $"{Convert.ToInt32(100 * Barra.fillAmount).ToString()}% Failed to verify account";
-                        texto.text = $"{Convert.ToInt32(100 * Barra.fillAmount).ToString()}% :C";
+                        texto.text = $"{Convert.ToInt32(100 * Barra.fillAmount).ToString()}% Failed to verify account =(";
                         facebook.UI.error();
                         return;
                     }
                 }
                 else
                 {
-                    texto.text = $"{Convert.ToInt32(100 * Barra.fillAmount).ToString()}% Welcome to wild ones!";
-                    texto.text = $"{Convert.ToInt32(100 * Barra.fillAmount).ToString()}% Cargando...";
+                    texto.text = $"{Convert.ToInt32(100 * Barra.fillAmount).ToString()}% Welcome to wild ones! Loading...";
 
                 }
                 Barra.fillAmount = cantidad / Tiempo;

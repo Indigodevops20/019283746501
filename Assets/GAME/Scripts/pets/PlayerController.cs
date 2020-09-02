@@ -89,12 +89,12 @@ public class PlayerController : MonoBehaviour
         //si el collider del Raycast es null isGround será verdadero de lo contrario será falso
         isGround = (hit.collider != null) ? true : false;
 
-        if (isGround && jm.Vertical() > 0.5f)
+        if (isGround && jm.Vertical() > 0f)
         {
             //le quita la "velocidad" a la y por si la tiene
             rb2d.velocity = new Vector2(rb2d.velocity.x, 0f);
             //le agrega la fuerza al pet
-            rb2d.AddForce(new Vector2(0, jumpPower), ForceMode2D.Impulse);
+            rb2d.AddForce(new Vector2(0, jm.Vertical() * jumpPower), ForceMode2D.Impulse);
         }
         else
         {
