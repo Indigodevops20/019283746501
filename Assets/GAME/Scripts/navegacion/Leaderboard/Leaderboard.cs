@@ -9,8 +9,12 @@ public class Leaderboard : MonoBehaviour
     public Transform listingContainer;
     public void GetLeaderBoard()
     {
-        var requestLeaderBoard = new GetLeaderboardRequest { StartPosition = 0, StatisticName = "PlayerLevel", MaxResultsCount = 10 };
-        PlayFabClientAPI.GetLeaderboard(requestLeaderBoard, OnGetLeaderBoard, OnErrorLeaderboard );
+        var requestLeaderBoard1 = new GetLeaderboardRequest { StartPosition = 0, StatisticName = "PlayerLevel" , MaxResultsCount = 10 };
+        var requestLeaderBoard2 = new GetLeaderboardRequest { StartPosition = 0, StatisticName = "PlayerKills"};
+        var requestLeaderBoard3 = new GetLeaderboardRequest { StartPosition = 0, StatisticName = "PlayerWins"};
+        PlayFabClientAPI.GetLeaderboard(requestLeaderBoard1, OnGetLeaderBoard, OnErrorLeaderboard );
+        PlayFabClientAPI.GetLeaderboard(requestLeaderBoard2, OnGetLeaderBoard, OnErrorLeaderboard);
+        PlayFabClientAPI.GetLeaderboard(requestLeaderBoard3, OnGetLeaderBoard, OnErrorLeaderboard);
 
     }
 
@@ -23,7 +27,9 @@ public class Leaderboard : MonoBehaviour
             Clasification LL = tempListing.GetComponent<Clasification>();
             LL.PlayerName.text = player.DisplayName;
             LL.PlayerLevel.text = player.StatValue.ToString();
-            Debug.Log(player.DisplayName + ": " + player.StatValue);
+            LL.PlayerKills.text = player.StatValue.ToString();
+            LL.PlayerWins.text = player.StatValue.ToString();
+            
         }
     } 
 

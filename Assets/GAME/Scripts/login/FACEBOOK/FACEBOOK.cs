@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using System;
 using System.Runtime.InteropServices.ComTypes;
+using PlayFab.Json;
 #region using facebook with unity
 #if FACEBOOK
 using Facebook.Unity;
@@ -14,7 +15,8 @@ using Facebook.Unity;
 public class FACEBOOK : MonoBehaviour
 {
     public Main mn;
-    public string standar = "WILDONES";
+    private string standar = "WILDONES";
+    
 
     #region SINGLETON
     public static FACEBOOK LFB;
@@ -200,5 +202,6 @@ public class FACEBOOK : MonoBehaviour
 
     }
     #endregion
-
+        
 }
+

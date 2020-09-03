@@ -25,9 +25,9 @@ public class StatisticsCLOUD : MonoBehaviour
     {
         // CloudScript returns arbitrary results, so you have to evaluate them one step and one parameter at a time
         PlayFab.Json.JsonObject jsonResult = (PlayFab.Json.JsonObject)result.FunctionResult;
-        object messageValue;
-        jsonResult.TryGetValue("messageValue", out messageValue); // note how "messageValue" directly corresponds to the JSON values set in CloudScript
-        Debug.Log((string)messageValue);
+       // object messageValue;
+       // jsonResult.TryGetValue("messageValue", out messageValue); // note how "messageValue" directly corresponds to the JSON values set in CloudScript
+     //   Debug.Log((string)messageValue);
     }
 
     private static void OnErrorShared(PlayFabError error)
