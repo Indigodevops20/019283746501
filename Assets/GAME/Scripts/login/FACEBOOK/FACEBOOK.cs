@@ -70,7 +70,6 @@ public class FACEBOOK : MonoBehaviour
     #region FACEBOOK LOGIN
     private void OnFacebookInitialized()
     {
-
         if (FB.IsInitialized)
         {
             FB.ActivateApp();
@@ -144,14 +143,13 @@ public class FACEBOOK : MonoBehaviour
     {
         mn.ObtenerStats();
         standar = PlayerPrefs.GetString("USERNAME");
-        Debug.Log(standar);
         PlayFabClientAPI.UpdateUserTitleDisplayName(new UpdateUserTitleDisplayNameRequest { DisplayName = standar }, OnDisplayName, OnPlayFabLoginWithFacebookFailure);
 
     }
 
    public void OnDisplayName(UpdateUserTitleDisplayNameResult result)
     {
-        Debug.Log(result.DisplayName + " is your name");
+        Debug.Log(result.DisplayName + " welcome to Wild Ones: MOBILE!");
     }
 
    public void OnPlayFabLoginWithFacebookFailure(PlayFabError error)
