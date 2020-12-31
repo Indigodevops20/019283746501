@@ -4,8 +4,10 @@ using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CreateUser : MonoBehaviour
+public class CustomUserName : MonoBehaviour
 {
+    public Text ID;
+
     public UIcontroller ui;
     public Text userInput;
     private string GetUsername;
@@ -24,6 +26,8 @@ public class CreateUser : MonoBehaviour
         },
         result => { 
             GetUsername = result.PlayerProfile.DisplayName;
+            ID.text = result.PlayerProfile.PlayerId;
+
             CheckExist();
         },
         

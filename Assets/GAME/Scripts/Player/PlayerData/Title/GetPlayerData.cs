@@ -20,6 +20,7 @@ public class GetPlayerData : MonoBehaviour
                 ShowDisplayName = true,
                 ShowCreated = true,
                 ShowLastLogin = true,
+                
             }
         },
         result => {

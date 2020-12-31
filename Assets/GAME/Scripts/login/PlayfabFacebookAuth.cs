@@ -10,7 +10,7 @@ public class PlayfabFacebookAuth : MonoBehaviour
     // holds the latest message to be displayed on the screen
 
     public UIcontroller ui;
-    public CreateUser user;
+    public CustomUserName user;
 
     private void Start()
     {
