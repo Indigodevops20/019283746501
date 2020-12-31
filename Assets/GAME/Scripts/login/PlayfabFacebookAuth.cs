@@ -14,7 +14,9 @@ public class PlayfabFacebookAuth : MonoBehaviour
 
     private void Start()
     {
-      FB.Init(OnFacebookInitialized);  
+
+        FB.Init();
+  
     }
    
 
